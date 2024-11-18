@@ -26,11 +26,11 @@ function calcularLegado() {
     // Montando os valores das parcelas
     var bruto = [
         valorParcelaFixa, // Primeira Parcela: R$2000,00
-        valorParcelaComDesconto, // Segunda Parcela: R$1000,00
-        valorParcelaComDesconto, // Terceira Parcela: R$1000,00
-        valorParcelaComDesconto + valorAdicionalComDesconto + retroativo, // Quarta Parcela: R$1050,00 + R$33,33 = R$1083,33
-        valorParcelaComDesconto + valorAdicionalComDesconto + retroativo, // Quinta Parcela: R$1050,00 + R$33,33 = R$1083,33
-        valorParcelaComDesconto + valorAdicionalComDesconto + retroativo  // Sexta Parcela: R$1050,00 + R$33,33 = R$1083,33
+        valorParcelaFixa, // Segunda Parcela: R$1000,00
+        valorParcelaFixa, // Terceira Parcela: R$1000,00
+        valorParcelaFixa + valorAdicional + retroativo, // Quarta Parcela: R$1050,00 + R$33,33 = R$1083,33
+        valorParcelaFixa + valorAdicional + retroativo, // Quinta Parcela: R$1050,00 + R$33,33 = R$1083,33
+        valorParcelaFixa + valorAdicional + retroativo  // Sexta Parcela: R$1050,00 + R$33,33 = R$1083,33
     ];
 
     var comBolsa = [
