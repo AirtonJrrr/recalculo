@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora de Recalculo de Mensalidades</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="https://learningvillage.com.br/app/uploads/2021/05/animaeducacao.png" alt="Ânima Educação">
+    </header>
+
+    <h1>Calculadora de Recalculo de Mensalidades</h1>
+
+    <div class="buttons">
+        <button onclick="mostrarSecao('legado')">Aluno Legado</button>
+        <button onclick="mostrarSecao('e2a2')">Aluno E2A2</button>
+    </div>
+
+    <!-- Seção Legado -->
+    <div class="section" id="legado" style="display:none;">
+        <h2>Aluno Legado</h2>
+        <label for="legadoCredito">Valor R$ de 1 crédito</label>
+        <input type="number" id="legadoCredito" placeholder="Ex: 100" step="0.01">
+        
+        <label for="legadoBolsa">Porcentagem da Bolsa de Desconto (%)</label>
+        <input type="number" id="legadoBolsa" placeholder="Ex: 20" step="0.01">
+        
+        <label for="legadoCreditosTotais">Créditos Totais do Aluno</label>
+        <input type="number" id="legadoCreditosTotais" placeholder="Ex: 21">
+
+        <button onclick="calcularLegado()">Calcular</button>
+
+        <div id="legadoResultado"></div>
+    </div>
+
+    <!-- Seção E2A2 -->
+    <div class="section" id="e2a2" style="display:none;">
+        <h2>Aluno E2A2</h2>
+        <label for="e2a2Mensalidade">Valor da Mensalidade Bruta (100%)</label>
+        <input type="number" id="e2a2Mensalidade" placeholder="Ex: 1000" step="0.01">
+        
+        <label for="e2a2Bolsa">Porcentagem da Bolsa de Desconto (%)</label>
+        <input type="number" id="e2a2Bolsa" placeholder="Ex: 50" step="0.01">
+        
+        <label for="e2a2Tipo">Aluno está cursando:</label>
+        <select id="e2a2Tipo">
+            <option value="mais">A Mais</option>
+            <option value="menos">A Menos</option>
+        </select>
+        
+        <label for="e2a2Porcentagem">Porcentagem de UC que o aluno está cursando a mais ou a menos (%)</label>
+        <input type="number" id="e2a2Porcentagem" placeholder="Ex: 50" step="0.01">
+
+        <button onclick="calcularE2A2()">Calcular</button>
+
+        <div id="e2a2Resultado"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
